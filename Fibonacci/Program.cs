@@ -1,27 +1,23 @@
 ﻿ using System;
+ using System.Threading.Channels;
 
-namespace Fibonacci
+ namespace Fibonacci
 {
     class Program
     {
         static void Main(string[] args)
         {
-            int nElement;
-            string exit; 
+            Console.WriteLine(Fibonacci.CalculateFibonacci(0) == 0
+                ? "For element zero the result is the correct number"
+                : "For element zero the result isnt the correct number");
 
-            do
-            {
-                Console.WriteLine("Write n element: ");
-                nElement = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine(Fibonacci.CalculateFibonacci(1) == 1
+                ? "For element one the result is the correct number"
+                : "For element zero the result isnt the correct number");
 
-                if (Fibonacci.CalculateFibonacci(nElement) != nElement)
-                    Console.WriteLine($"For element {nElement}, the return isnt {nElement}!");
-
-                Console.WriteLine("Do you want to exit (Y/N): ");
-                exit = Console.ReadLine();
-            } while (exit.Equals("N"));
-
-
+            Console.WriteLine(Fibonacci.CalculateFibonacci(4000) == 7997
+                ? "For element 4000 the result is the correct number"
+                : "For element 4000 the result isnt the correct number");
         }
     }
 }
