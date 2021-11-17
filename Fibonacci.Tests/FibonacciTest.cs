@@ -20,5 +20,13 @@ namespace Fibonacci.Tests
             int actual = Fibonacci.CalculateFibonacci(1);
             Assert.Equal(expected, actual);
         }
+
+        [Fact]
+        public void CheckValueIsCorrectWhenIsEleven()
+        {
+            int expected = 89;
+            int actual = Fibonacci.CalculateFibonacci(11);
+            Assert.Equal(expected, actual);
+        }
     }
 }
