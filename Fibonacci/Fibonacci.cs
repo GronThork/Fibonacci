@@ -12,7 +12,7 @@ namespace Fibonacci
             {
                 0 => 0,
                 1 => 1,
-                _ => n - 1 + n - 2,
+                _ => CalculateFibonacci( n - 1) + CalculateFibonacci(n - 2),
             };
         }
     }
