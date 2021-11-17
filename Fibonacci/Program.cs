@@ -15,9 +15,9 @@
                 ? "For element one the result is the correct number"
                 : "For element zero the result isnt the correct number");
 
-            Console.WriteLine(Fibonacci.CalculateFibonacci(4000) == 7997
-                ? "For element 4000 the result is the correct number"
-                : "For element 4000 the result isnt the correct number");
+            Console.WriteLine(Fibonacci.CalculateFibonacci(12) == 144
+                ? "For element 12 the result is the correct number"
+                : "For element 12 the result isnt the correct number");
 
             Console.WriteLine("Result: " + Fibonacci.CalculateFibonacci(4000));
         }

@@ -28,5 +28,11 @@ namespace Fibonacci.Tests
             int actual = Fibonacci.CalculateFibonacci(11);
             Assert.Equal(expected, actual);
         }
+
+        [Fact]
+        public void CheckValueIsCorrectWhenIsNegativeNumber()
+        {
+            Assert.Throws<ArgumentOutOfRangeException>(() => Fibonacci.CalculateFibonacci(-1));
+        }
     }
 }

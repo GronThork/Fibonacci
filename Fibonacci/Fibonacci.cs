@@ -8,6 +8,11 @@ namespace Fibonacci
     {
         public static int CalculateFibonacci(int n)
         {
+            if (n < 0)
+            {
+                throw new ArgumentOutOfRangeException($"{nameof(n)} must be positive");
+            }
+
             return n switch
             {
                 0 => 0,
