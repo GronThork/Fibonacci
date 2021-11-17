@@ -12,5 +12,13 @@ namespace Fibonacci.Tests
             int actual = Fibonacci.CalculateFibonacci(0);
             Assert.Equal(expected, actual);
         }
+
+        [Fact]
+        public void CheckValueIsCorrectWhenIsOne()
+        {
+            int expected = 1;
+            int actual = Fibonacci.CalculateFibonacci(1);
+            Assert.Equal(expected, actual);
+        }
     }
 }
